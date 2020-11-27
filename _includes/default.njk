@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>{{ title }}</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+{{ content | safe }}
+<p>Tags:</p>
+<ul>
+  {% for tag in tags %}
+    <li>{{ tag }}</li>
+  {% endfor %}
+</ul>
+</body>
+</html>
