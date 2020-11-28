@@ -1,4 +1,5 @@
 function mergeAndSortTags(tags1, tags2) {
+  // Using Set removes duplicates
   let tagsAll = [
     ...new Set(
       [].concat(
@@ -22,8 +23,6 @@ module.exports = function (eleventyConfig) {
       return page;
     });
   });
-
-  // eleventyConfig.setDataDeepMerge(true);
 
   return {};
 };
